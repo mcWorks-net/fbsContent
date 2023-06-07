@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+          <h2 class="banner-title t-center mb--10">
+            Learning Center <span class="t-exbold">Solutions</span>
+          </h2>
+          <p class="t-center mb--60">
+            Senior High School and College students will acquire the following
+            technical skills through work related tasks in the field of IT and
+            Accounting.
+          </p>
+  
+          <div class="row no-margin">
+            <div class="col-lg-6 col-md-6 col-sm-12 mb--60">
+              <div id="data-1-content" class="service__title t-center">
+                <i class="fa-solid fa-laptop-code circle-icon" style="font-size: 2.5rem"></i>
+                <h3 class="mb--10 t-bold">Information Technology</h3>
+                <p>
+                  <em>
+                    For SHS ICT or STEM Strand &<br />
+                    College Students taking any<br />
+                    computer related course
+                  </em>
+                </p>
+                <div
+                class="service__list"
+                style="margin-top: 3rem; width: 240px; margin: 0 auto"
+              >
+                    <h2>Course Outline</h2>
+                    <ul style="margin-top: 10px; text-align: left">
+                    <li>► Web Designing using Figma</li>
+                    <li>► Website Mockup Designing</li>
+                    <li>► Frontend Development</li>
+                    <li>► Mobile Responsive Designing</li>
+                    <li>► CSS & HTML Programming</li>
+                    <li>► Web Content Designing and</li>
+                    <li>► SASS Preprocessor Scripting Language</li>
+                    <li>► Tailwind CSS</li>
+                    <li>► WordPress Development</li>
+                    <li>► Business Work Ethics</li>
+                    </ul>
+                </div>
+                </div>
+                <button id="data-1" class="seeMore" type="button" data-value="Close"></button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 mb--60">
+              <div id="data-2-content" class="service__title t-center">
+                <i class="fa-solid fa-calculator circle-icon" style="font-size: 2.5rem"></i>
+                <h3 class="mb--10 t-bold">Accounting</h3>
+                <p>
+                  <em>
+                    For SHS ABM Strand & <br />
+                    College Students taking any <br />
+                    accounting related course
+                  </em>
+                </p>
+                
+                <div
+                class="service__list"
+                style="margin-top: 3rem; margin: 0 auto"
+              >
+                    <h2>Course Outline</h2>
+                    <div class="serviceWrapper">
+                        <ul style="margin-top: 10px; text-align: left">
+                            <li>► Company Incorporation <br> and Registration</li>
+                            <li>► Chart of Accounts</li>
+                            <li>► Basic Accounting</li>
+                            <li>► Bookkeeping</li>
+                            <li>► Financial Reports</li>
+                            <li>► Payroll Accounting: PH and US</li>
+                            <li>► Taxation: PH and US</li>
+                            <li>► Bank Transactions</li>
+                            <li>► QuickBooks Online</li>
+                            <li>► Xero Online</li>
+                            <li>► Budget Monitoring</li>
+                        </ul>
+                        <ul style="margin-top: 10px; text-align: left">
+                            <li>► Financial Projections</li>
+                            <li>► Depreciation</li>
+                            <li>► Non Profit Accounting</li>
+                            <li>► Accounts Receivable and <br> Accounts Payable</li>
+                            <li>► Inventory and Cost of Goods Sold</li>
+                            <li>► Financial Report Errors and <br> Troubleshooting</li>
+                            <li>► Stockholder's Equity</li>
+                            <li>► Standard Costing</li>
+                            <li>► Manufacturing Accounting</li>
+                            <li>► Merchandising Accounting</li>
+                        </ul>
+                    </div>
+                    
+                </div> 
+                </div>
+                <button id="data-2" class="seeMore" type="button" data-value="Close"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <script>
+        const lcsSeeMore = document.querySelectorAll('.seeMore');
+        lcsSeeMore.forEach((seeMore) => {
+            seeMore.addEventListener("click", () =>{
+                const service__title = document.querySelector(`#${seeMore.id}-content`);
+                service__title.classList.toggle("active");
+                seeMore.classList.toggle("changeText");
+            });
+        });
+      </script>
+</body>
+</html>
