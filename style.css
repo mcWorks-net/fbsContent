@@ -3786,7 +3786,7 @@
     padding-top: 5rem;
     padding-bottom: 6rem;
     position: relative;
-    max-height: 441px;
+    height: 441px;
     overflow: hidden;
   }
 
@@ -3849,7 +3849,7 @@
 .service__title .service__list{
     z-index: 999;
     position: absolute;
-    bottom: -20%;
+    top: -20%;
     left: 50%;
     transform: translate(-50%,0);
     transition: 0.5s;
@@ -3860,7 +3860,7 @@
 
 .service__title.active .service__list{
     visibility: visible;
-    bottom: 10%;
+    top: 5%;
     opacity: 100%;
     transform: 0.5s;
     transition-delay: 500ms;
@@ -3875,4 +3875,16 @@
 .service__list ul {
     list-style-position: inside;
     list-style: none;
+}
+
+@media (max-width:1199px) {
+  .service__title {
+    height: 35rem;
+  }
+}
+
+@media (max-width:500px) {
+  .service__title.active {
+    height: 52rem;
+  }
 }
