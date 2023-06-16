@@ -3884,7 +3884,7 @@
 }
 
 @media (max-width:500px) {
-  .service__title.active {
+  .service__title.abmService.active {
     height: 52rem;
   }
 }
